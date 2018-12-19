@@ -10,7 +10,7 @@
 		
 
 <head><meta name="generator" content="Hexo 3.8.0">
-	<title>Hexo</title>
+	<title>建站思路</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="apple-mobile-web-app-title" content="Amaze UI">
@@ -54,7 +54,7 @@
 		
 		
 			
-			<p class="page-name">主页</p>	
+			<p class="page-name">当前文章&nbsp;:&nbsp;《建站思路》</p>
 			
 		
 	
@@ -146,154 +146,187 @@
 		<!--main-->
 		<main> 
 		<div class="page-container">
-		
-	<!-- content srart -->
-<div class="am-g am-g-fixed blog-fixed">
-	<div class="am-u-md-12 am-u-sm-12">
+		<!-- content srart -->
+<div class="am-g am-g-fixed blog-fixed blog-content">
+	<div class="am-u-md-8 am-u-sm-12">
 
-		
-			<article class="am-g blog-entry-article">
+		<article class="am-article blog-article-p">
 
-				<div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-img">
-					<img src="/img/cart_cover.jpg" class="am-u-sm-12">
-				</div>	
+			<div class="am-article-hd">
+				
 
-				<div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-text">
-					<span class="theme-annie-post-date">
-						<a href="/2018/12/19/建站-思路/" itemprop="url">
-	<time datetime="2018-12-19T13:07:03.570Z" itemprop="datePublished">
-  		2018-12-19
-  </time>
-</a>    
 
-					</span>
-					<span class="theme-annie-post-title">
-						
+				<h1 class="am-article-title blog-text-center">
+					
+					
 	
 		<a href="/2018/12/19/建站-思路/" itemprop="url">		
 			建站思路		
 		</a>
 	
 
-					</span>
-					
-					
-						<p>
-							
-								一、博客    选定博客(GitHub,博客园,CSDN)    建立博客        跟随建网站时写过程(例如https://www.cnblogs.com/jyzhao/),本年计划
-二、建站    部署位置:        阿里云服务器        docker(详见https://blog.csdn.net/hypmxy/article/details/80269120)(docker	
-							  
-						</p> 
-					
+				</h1>
 
-					
-						<span class="continue-read">      	
-							<a href="/2018/12/19/建站-思路/" class="pull-right">
-								展开全文
-							</a>		
-						</span>
-					         		
-				</div>
-		
-			</article>
-		
-			<article class="am-g blog-entry-article">
-
-				<div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-img">
-					<img src="/img/cart_cover.jpg" class="am-u-sm-12">
-				</div>	
-
-				<div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-text">
-					<span class="theme-annie-post-date">
-						<a href="/2018/12/18/hello-world-1/" itemprop="url">
-	<time datetime="2018-12-18T14:52:19.000Z" itemprop="datePublished">
-  		2018-12-18
+				<p class="am-article-meta blog-text-center">
+					<span>
+						<i class="fa fa-clock-o"></i> 
+						<a href="/2018/12/19/建站-思路/" itemprop="url">
+	<time datetime="2018-12-19T13:07:03.570Z" itemprop="datePublished">
+  		2018-12-19
   </time>
 </a>    
-
+&nbsp;
 					</span>
-					<span class="theme-annie-post-title">
+					
+					<span>						
 						
-	
-		<a href="/2018/12/18/hello-world-1/" itemprop="url">		
-			hello world!		
-		</a>
-	
-
 					</span>
+				</p>
+			</div>
+
+			<div class="am-article-bd">
+				<div class="content" id="post-content">
 					
-					
-						<p>
-							
-								Welcome to my blog, enter password to read.
-							  
-						</p> 
-					
+						<p>一、博客<br>    选定博客(GitHub,博客园,CSDN)<br>    建立博客<br>        跟随建网站时写过程(例如<a href="https://www.cnblogs.com/jyzhao/),本年计划" target="_blank" rel="noopener">https://www.cnblogs.com/jyzhao/),本年计划</a></p>
+<p>二、建站<br>    部署位置:<br>        阿里云服务器<br>        docker(详见<a href="https://blog.csdn.net/hypmxy/article/details/80269120)(docker内部的服务于Linux之间的通信通过&#39;端口映射&#39;)" target="_blank" rel="noopener">https://blog.csdn.net/hypmxy/article/details/80269120)(docker内部的服务于Linux之间的通信通过&#39;端口映射&#39;)</a><br>        docker镜像和容器<br>            一个镜像对应多个容器,<br>            镜像只是可读的,容器是可以对文件读写<br>            镜像位于只读层,容器位于读写层</p>
+<pre><code>初步构建：
+Angular JS
+nginx  访问代理
+web server + MySQL(数据) + 文件存储 同一台服务器上,不进行服务分离 
+
+
+开发项目技术
+分布式微服务 spring boot + spring cloud或dubbo(分布式微服务拆分)
+                            Eureka消息注册
+
+微服务下的开发部署持续集成部署
+jenkins + git + maven 
+
+负载均衡(未使用)
+全文检索(未使用)
+
+缓存优化(Redis)
+消息队列
+日志处理
+
+
+持久层
+mysql
+rabbitmq
+
+
+
+
+SpringCloud
+
+服务发现——Netflix Eureka
+
+客服端负载均衡——Netflix Ribbon
+
+断路器——Netflix Hystrix
+
+服务网关——Netflix Zuul
+
+分布式配置——Spring Cloud Config
+</code></pre><p>三、优化网站<br>    待定</p>
 
 					
-						<span class="continue-read">      	
-							<a href="/2018/12/18/hello-world-1/" class="pull-right">
-								展开全文
-							</a>		
-						</span>
-					         		
 				</div>
-		
-			</article>
-		
-			<article class="am-g blog-entry-article">
+			</div>
+		</article>
 
-				<div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-img">
-					<img src="/img/cart_cover.jpg" class="am-u-sm-12">
-				</div>	
-
-				<div class="am-u-lg-6 am-u-md-12 am-u-sm-12 blog-entry-text">
-					<span class="theme-annie-post-date">
-						<a href="/2018/12/18/hello-world/" itemprop="url">
-	<time datetime="2018-12-18T14:34:33.724Z" itemprop="datePublished">
-  		2018-12-18
-  </time>
-</a>    
-
-					</span>
-					<span class="theme-annie-post-title">
-						
+		<ul class="am-pagination">
+    
 	
-		<a href="/2018/12/18/hello-world/" itemprop="url">		
-			Hello World		
+		<li class="am-pagination-next">
+		<a class="pull-right" href="/2018/12/18/hello-world-1/" title="hello world!">
+			下一篇 &raquo;
 		</a>
+		</li>
+	 
+ </ul>
+        
+
+		<div class="theme-annie-comment-button-container">
+	<button id="annie-comment-button" class="theme-annie-comment-button" onclick="Annie_Comment()">
+		加载评论
+		<!--加载评论-->
+	</button>
+</div>
+
+<div id="annie-comment-container" class="theme-annie-comment-main-container">
+
+	
+		
+			<!-- comment valine -->
+			<!-- show valine comment -->
+<div id="valineComment" class="comment"></div>
+
+<!-- valine`s js & css -->
+<script>
+	window.jQuery || document.write('<script src="/js/jquery-2.1.1.min.js"><\/script>')
+</script>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="/js/valine.min.js"></script>
+<link rel="stylesheet" href="/css/comment.css">
+
+<script>
+	var checkExistComment = setInterval(function() {
+		if( $('#valineComment').length ) {
+			new Valine({
+				// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
+				av: AV,
+				//使用id寻找div元素（使用class可能找不到）
+				el: '#valineComment',
+				emoticon_url: 'https://cloud.panjunwen.com/alu',
+				emoticon_list: ["吐.png", "期待.png", "高兴.png", "吐血倒地.png", "哭泣.png", "欢呼.png"],
+				app_id: "3333....", //获取APP ID
+				app_key: "3333......", //获取APP KEY
+				placeholder: "no any!", //评论框占位提示文字        			
+			});
+			clearInterval(checkExistComment);
+		}
+	}, 100);
+</script>
+		
 	
 
-					</span>
-					
-					
-						<p>
-							
-								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick	
-							  
-						</p> 
-					
+</div>
 
-					
-						<span class="continue-read">      	
-							<a href="/2018/12/18/hello-world/" class="pull-right">
-								展开全文
-							</a>		
-						</span>
-					         		
-				</div>
+<script type="text/javascript">
+	/* Show Comment */
+	var Annie_Comment = function() {
+		function Show_Hidden(obj) {
+			obj.style.display = 'block';
+		}
 		
-			</article>
-		     
+		//var obutton = $('#annie-comment-button');
+		//var obutton = $('#annie-comment-container');
+		var obutton = document.getElementById("annie-comment-button" || "0");
+		var odiv = document.getElementById("annie-comment-container");
+		if( 'obutton' ) {
+			obutton.onclick = function() {
+				Show_Hidden(odiv);
+				$("#annie-comment-button").css("display", 'none');
+				return false;
+			}
+		}
+	};
 
-		    	
+	(function Annie_Init() {
+		Annie_Comment();
+	})();
+</script>
+		
+		<!--
+	时间：2018-09-24
+	描述：The TOC module refers to 'https://github.com/codefine/hexo-theme-mellow', include toc.ejs、toc.js、toc.css. All rights reserved by codefine. 
+-->
+
+	
+
 	</div>
 </div>
-<!-- content end -->
-
-	<!--图文风格-->
-
 		</div>
 		</main>
 		
@@ -376,6 +409,8 @@ Quick
 
 
 
+
+	<script type="text/javascript" src="/js/toc.js"></script>
 
 
 <script type="text/javascript" src="/js/main.js"></script>
