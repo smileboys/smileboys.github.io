@@ -10,7 +10,7 @@
 		
 
 <head><meta name="generator" content="Hexo 3.8.0">
-	<title>建站思路</title>
+	<title>tag: 励志。</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="apple-mobile-web-app-title" content="Amaze UI">
@@ -54,7 +54,7 @@
 		
 		
 			
-			<p class="page-name">当前文章&nbsp;:&nbsp;《建站思路》</p>
+			<p class="page-name">标签</p>
 			
 		
 	
@@ -149,188 +149,50 @@
 		<!-- content srart -->
 <div class="am-g am-g-fixed blog-fixed blog-content">
 	<div class="am-u-md-8 am-u-sm-12">
+		<div class="archive">
 
-		<article class="am-article blog-article-p">
-
-			<div class="am-article-hd">
+			<div class="blog-text-center">
 				
+					<i class="fa fa-book">励志。</i>
+				
+			</div>  
 
+			
 
-				<h1 class="am-article-title blog-text-center">
+							
+				
+				
+				
 					
-					
-	
-		<a href="/2018/12/19/建站-思路/" itemprop="url">		
-			建站思路		
-		</a>
-	
-
-				</h1>
-
-				<p class="am-article-meta blog-text-center">
-					<span>
-						<i class="fa fa-clock-o"></i> 
-						<a href="/2018/12/19/建站-思路/" itemprop="url">
-	<time datetime="2018-12-19T13:07:03.570Z" itemprop="datePublished">
-  		2018-12-19
-  </time>
-</a>    
-&nbsp;
-					</span>
-					
-					<span>						
-						
-					</span>
-				</p>
-			</div>
-
-			<div class="am-article-bd">
-				<div class="content" id="post-content">
-					
-						<p>一、博客<br>    选定博客(GitHub,博客园,CSDN)<br>    建立博客<br>        跟随建网站时写过程(例如<a href="https://www.cnblogs.com/jyzhao/),本年计划" target="_blank" rel="noopener">https://www.cnblogs.com/jyzhao/),本年计划</a></p>
-<p>二、建站<br>    部署位置:<br>        阿里云服务器<br>        docker(详见<br>        (<a href="https://blog.csdn.net/hypmxy/article/details/80269120" target="_blank" rel="noopener">https://blog.csdn.net/hypmxy/article/details/80269120</a><br>        )(docker内部的服务于Linux之间的通信通过’端口映射’)<br>        docker镜像和容器<br>            一个镜像对应多个容器,<br>            镜像只是可读的,容器是可以对文件读写<br>            镜像位于只读层,容器位于读写层</p>
-<pre><code>初步构建：
-Angular JS
-nginx  访问代理
-web server + MySQL(数据) + 文件存储 同一台服务器上,不进行服务分离 
-
-
-开发项目技术
-分布式微服务 spring boot + spring cloud或dubbo(分布式微服务拆分)
-                            Eureka消息注册
-
-微服务下的开发部署持续集成部署
-jenkins + git + maven 
-
-负载均衡(未使用)
-全文检索(未使用)
-
-缓存优化(Redis)
-消息队列
-日志处理
-
-
-持久层
-mysql
-rabbitmq    
-
-
-SpringCloud
-
-服务发现——Netflix Eureka
-
-客服端负载均衡——Netflix Ribbon
-
-断路器——Netflix Hystrix
-
-服务网关——Netflix Zuul
-
-分布式配置——Spring Cloud Config
-</code></pre><p>三、优化网站<br>    待定</p>
 
 					
-				</div>
-			</div>
-		</article>
-
-		<ul class="am-pagination">
-    
-    	<li class="am-pagination-prev">
-   		<a class="pull-left" href="/2018/12/21/励志-句/" title="励志好句">
-      		&laquo; 上一篇
-		</a>
-		</li>
-	
-	
-		<li class="am-pagination-next">
-		<a class="pull-right" href="/2018/12/18/hello-world-1/" title="hello world!">
-			下一篇 &raquo;
-		</a>
-		</li>
-	 
- </ul>
-        
-
-		<div class="theme-annie-comment-button-container">
-	<button id="annie-comment-button" class="theme-annie-comment-button" onclick="Annie_Comment()">
-		加载评论
-		<!--加载评论-->
-	</button>
-</div>
-
-<div id="annie-comment-container" class="theme-annie-comment-main-container">
-
-	
-		
-			<!-- comment valine -->
-			<!-- show valine comment -->
-<div id="valineComment" class="comment"></div>
-
-<!-- valine`s js & css -->
-<script>
-	window.jQuery || document.write('<script src="/js/jquery-2.1.1.min.js"><\/script>')
-</script>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="/js/valine.min.js"></script>
-<link rel="stylesheet" href="/css/comment.css">
-
-<script>
-	var checkExistComment = setInterval(function() {
-		if( $('#valineComment').length ) {
-			new Valine({
-				// AV 对象来自上面引入av-min.js(老司机们不要开车➳♡゛扎心了老铁)
-				av: AV,
-				//使用id寻找div元素（使用class可能找不到）
-				el: '#valineComment',
-				emoticon_url: 'https://cloud.panjunwen.com/alu',
-				emoticon_list: ["吐.png", "期待.png", "高兴.png", "吐血倒地.png", "哭泣.png", "欢呼.png"],
-				app_id: "3333....", //获取APP ID
-				app_key: "3333......", //获取APP KEY
-				placeholder: "no any!", //评论框占位提示文字        			
-			});
-			clearInterval(checkExistComment);
-		}
-	}, 100);
-</script>
-		
-	
-
-</div>
-
-<script type="text/javascript">
-	/* Show Comment */
-	var Annie_Comment = function() {
-		function Show_Hidden(obj) {
-			obj.style.display = 'block';
-		}
-		
-		//var obutton = $('#annie-comment-button');
-		//var obutton = $('#annie-comment-container');
-		var obutton = document.getElementById("annie-comment-button" || "0");
-		var odiv = document.getElementById("annie-comment-container");
-		if( 'obutton' ) {
-			obutton.onclick = function() {
-				Show_Hidden(odiv);
-				$("#annie-comment-button").css("display", 'none');
-				return false;
-			}
-		}
-	};
-
-	(function Annie_Init() {
-		Annie_Comment();
-	})();
-</script>
-		
-		<!--
-	时间：2018-09-24
-	描述：The TOC module refers to 'https://github.com/codefine/hexo-theme-mellow', include toc.ejs、toc.js、toc.css. All rights reserved by codefine. 
--->
-
-	
-
+					<!--<a href="/archives/2018" class="archive-year">2018</a>-->
+				
+								
+				
+					  
+					<div class="archive-year">
+						<a href="/archives/2018/12">
+							2018-12
+						</a>
+					</div>				
+				  
+				
+				<div class="archive-item">
+					<div class="archive-post-title">									
+						<a href="/2018/12/21/励志-句/" itemprop="url">励志好句</a>
+					</div>
+					<div class="archive-post-time">
+						<a href="/2018/12/21/励志-句/" itemprop="url">12-21</a>
+					</div>
+				</div>		        							
+			
+				
+			    
+		</div>
 	</div>
 </div>
+
 		</div>
 		</main>
 		
@@ -403,18 +265,11 @@ SpringCloud
 </style>
 
 
-	<script src="/js/motto.js"></script>
-	<script type="text/javascript">
-		$(".motto").html(getMingYanContent());
-	</script>	
 
 
 
 
 
-
-
-	<script type="text/javascript" src="/js/toc.js"></script>
 
 
 <script type="text/javascript" src="/js/main.js"></script>
